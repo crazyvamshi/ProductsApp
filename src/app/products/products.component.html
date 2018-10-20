@@ -1,0 +1,13 @@
+<app-product-search></app-product-search>
+<ul class="products">
+    <li *ngFor="let product of products">
+        <a routerLink="/detail/{{product.id}}">
+            <div>
+                <img src={{product.image}} height:250px width:270px>
+            </div>
+            <p class="badge">{{product.name}}</p>
+            <p class="badge">{{product.price}}</p>
+        </a>
+
+    </li>
+</ul>

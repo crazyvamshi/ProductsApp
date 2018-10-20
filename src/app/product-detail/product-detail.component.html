@@ -1,0 +1,20 @@
+<div *ngIf="product">
+    <div style="margin-bottom: 60px">
+        <h2>{{product.name | uppercase}} Details</h2>
+        <img src={{product.image}} height:250px width:270px>
+        <div><span>price: </span>{{product.price}}</div>
+        <div>
+            <p>{{product.description}}</p>
+        </div>
+    </div>
+    <div>
+        <label>Enter Zipcode for availability:
+              </label>
+        <input type="text" placeholder="Enter Zipcode" minlength="5" maxlength="5" />
+        <button class="button" type="submit" (click)="checkAvailability(product.id)">Submit</button>
+    </div>
+    <div>
+        <p *ngIf=available>This product is available in your area</p>
+        <p *ngIf=unavailable>This product is unavailable in your area</p>
+    </div>
+</div>

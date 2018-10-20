@@ -1,0 +1,25 @@
+/* ProductDetailComponent's private CSS styles */
+
+label {
+    width: 3em;
+    margin: .5em 0;
+    font-weight: bold;
+}
+
+input {
+    height: 2em;
+    font-size: 1em;
+    padding-left: .4em;
+}
+
+button {
+    margin-left: 20px;
+    margin-top: 20px;
+    font-family: Arial;
+    background-color: #0568ae;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    cursor: hand;
+}
